@@ -8,6 +8,8 @@ if requested_topping != 'anchovies':
 del requested_topping
 
 # Testing Multiple Conditions
+# Use a series of simple if statements
+
 requested_topping = ['mushrooms', 'extra cheese']
 
 if 'mushrooms' in requested_topping:
