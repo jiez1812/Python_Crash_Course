@@ -1,9 +1,27 @@
-mob = {'kind': 'puppy', 'owner': 'john'}
-niel = {'kind': 'kitty', 'owner': 'amier'}
-boon = {'kind': 'pig', 'owner': 'kate'}
+pets = []
 
-pets = [mob, niel, boon]
+pet = {
+    'name' : 'dank',
+    'kind' : 'cat',
+    'owner' : 'rory'
+}
+pets.append(pet)
 
-for pet in pets:
-    print("Kind : " + pet['kind'].title())
-    print("Owner : " + pet['owner'].title() + "\n")
+pet = {
+    'name' : 'maia',
+    'kind' : 'dog',
+    'owner' : 'triexie'
+}
+pets.append(pet)
+
+pet = {
+    'name' : 'atlas',
+    'kind' : 'pig',
+    'owner' : 'donelle'
+}
+pets.append(pet)
+
+for p in pets:
+    print("Name : " + p['name'].title())
+    print("Kind : " + p['kind'].title())
+    print("Owner : " + p['owner'].title() + "\n")
