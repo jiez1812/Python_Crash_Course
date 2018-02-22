@@ -8,6 +8,9 @@ while active:
 
     if ans == 'quit':
         active = False
+        print('Thank you for enquiry.\n')
+    elif not ans.isdecimal():
+        print('Please insert valid input.\n')
     else:
         age = int(ans)
         if 0 <= age < 3 :
