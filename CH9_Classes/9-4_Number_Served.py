@@ -18,8 +18,8 @@ class Restaurant():
     def set_number_served(self, new_number):
         self.number_served = new_number
 
-    def increment_number_served(self):
-        self.number_served += 1
+    def increment_number_served(self, add_number):
+        self.number_served += add_number
 
 restaurant_1 = Restaurant('food book', 'western')
 restaurant_1.describe_restaurant()
@@ -33,5 +33,5 @@ restaurant_1.print_number()
 restaurant_1.set_number_served(1)
 restaurant_1.print_number()
 
-restaurant_1.increment_number_served()
+restaurant_1.increment_number_served(5)
 restaurant_1.print_number()
