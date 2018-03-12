@@ -1,7 +1,7 @@
 filename = 'pi_digits.txt'
 
 with open(filename) as file_object:
-    lines = file_object.readline()
+    lines = file_object.readlines()
 
 pi_string = ''
 for line in lines:
