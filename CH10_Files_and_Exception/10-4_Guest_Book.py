@@ -1,16 +1,13 @@
-def append_file(filename, guestname):
-    with open(filename, 'a') as file_object:
-        file_object.write(guestname + "\n")
-
-filename = 'guest.txt'
+filename = 'guest_book.txt'
 
 active = True
-while active:
-    message = "Please enter a guest's name.\n"
-    message += "Input 'end' to stop.: "
+with open(filename, 'w') as file_object:
+    while active:
+        message = "Please enter a guest's name.\n"
+        message += "Input 'end' to stop.: "
 
-    guestname = input(message)
-    if guestname.lower() != "end":
-        append_file(filename, guestname)
-    else:
-        active = False
+        guestname = input(message)
+        if guestname.lower() != "end":
+            file_object.write(guestname + "\n")
+        else:
+            active = False
