@@ -1,17 +1,9 @@
-print("Please enter two numbers to add")
-print("enter 'q' to quit")
+try:
+    num1 = int(input("Number 1 : "))
+    num2 = int(input("Number 2 : "))
 
-while True:
-    num1 = input("Number 1 : ")
-    if num1 == 'q':
-        break
-    num2 = input("Number 2 : ")
-    if num2 == 'q':
-        break
-
-    try:
-        sum = int(num1) + int(num2)
-    except ValueError:
-        print("please enter number.")
-    else:
-        print(sum)
+    sum = num1 + num2
+except ValueError:
+    print("please enter number.")
+else:
+    print(sum)
